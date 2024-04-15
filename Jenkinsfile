@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Use credentials for Git authentication
                  sh 'https://github.com/sheir296/Lab-11.git'            
         }
         

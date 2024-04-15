@@ -5,8 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Use credentials for Git authentication
-                git credentialsId: '4367b485-f77a-4e69-a812-38e4924eccb0', url: 'https://github.com/sheir296/Lab-11.git'
-            }
+                 sh 'git pull https://github.com/sheir296/Lab-11.git'            
         }
         
         stage('Dependency Installation') {
